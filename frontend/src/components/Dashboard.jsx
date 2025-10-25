@@ -6,7 +6,7 @@ import { Plus, AlertTriangle, CheckCircle, Clock, Calendar, Package, TrendingUp,
 import { format, addDays, isAfter, isBefore, subDays, isSameDay, addMonths } from 'date-fns'
 
 // --> API base URL is set to your Spring Boot backend
-const API_BASE_URL = 'http://localhost:8080/api' 
+const API_BASE_URL = 'https://backend-for-upkeep.onrender.com/api' 
 
 export default function Dashboard() {
     // --> Assets now starts empty
