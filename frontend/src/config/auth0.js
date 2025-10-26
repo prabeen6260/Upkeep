@@ -8,6 +8,7 @@ export const auth0Config = {
   },
   logoutParams: {
     returnTo: import.meta.env.VITE_AUTH0_LOGOUT_REDIRECT_URI || window.location.origin,
+    client_id: import.meta.env.VITE_AUTH0_CLIENT_ID,
   },
   useRefreshTokens: true,
   cacheLocation: 'localstorage',
