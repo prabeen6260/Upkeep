@@ -18,7 +18,7 @@ export default function Navbar() {
     const handleLogout = () => {
         logout({
             logoutParams: {
-                returnTo: window.location.origin,
+                returnTo: meta.env.VITE_AUTH0_LOGOUT_REDIRECT_URI ||window.location.origin,
             },
         })
     }
