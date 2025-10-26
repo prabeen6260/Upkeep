@@ -7,8 +7,8 @@ export const auth0Config = {
     audience: import.meta.env.VITE_AUTH0_AUDIENCE,
   },
   logoutParams: {
-    //returnTo: import.meta.env.VITE_AUTH0_LOGOUT_REDIRECT_URI || window.location.origin,
-    returnTo: "https://prabeen6260.github.io/Upkeep/",
+    returnTo: import.meta.env.VITE_AUTH0_LOGOUT_REDIRECT_URI || window.location.origin,
+    //returnTo: "https://prabeen6260.github.io/Upkeep/",
     client_id: import.meta.env.VITE_AUTH0_CLIENT_ID,
   },
   useRefreshTokens: true,

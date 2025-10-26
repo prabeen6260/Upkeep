@@ -1,6 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import { User, Mail, Calendar, Shield, LogOut, Settings, Edit } from 'lucide-react'
 import { format } from 'date-fns'
+import { meta } from '@eslint/js'
 
 export default function Profile() {
   const { user, logout, isLoading } = useAuth0()
@@ -35,7 +36,7 @@ export default function Profile() {
   const handleLogout = () => {
     logout({
       logoutParams: {
-        returnTo: window.location.origin,
+        returnTo: meta.env.VITE_AUTH0_LOGOUT_REDIRECT_URI || window.location.origin,
       },
     })
   }
